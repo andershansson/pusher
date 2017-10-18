@@ -7,12 +7,12 @@ defmodule Pusher.Mixfile do
 
   def project do
     [ app: :pusher,
-      version: "0.1.3",
-      elixir: "~> 1.0",
+      version: "0.1.4",
+      elixir: "~> 1.4",
       name: "Pusher",
       description: @description,
       package: package,
-      source_url: "https://github.com/edgurgel/pusher",
+      source_url: "https://github.com/andershansson/pusher",
       deps: deps ]
   end
 
@@ -32,7 +32,7 @@ defmodule Pusher.Mixfile do
   defp deps do
     [{:httpoison, "~> 0.8"},
      {:signaturex, "~> 1.0"},
-     {:exjsx, "~> 3.0"},
+     {:exjsx, "~> 4.0"},
      {:earmark, "~> 0.1.17", only: :docs},
      {:ex_doc, "~> 0.8.0", only: :docs},
      {:mock, "~> 0.1.1", only: [:dev, :test] } ]
